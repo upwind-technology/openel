@@ -43,12 +43,13 @@ static HALRETURNCODE_T fncInit3(HALCOMPONENT_T *pHalComponent,HAL_ARGUMENT_T *pC
 	timeWk = time(&timeWk);
 	timeOrg = (int32_t)timeWk;
 	((HALSENSOR_T *)pHalComponent)->valueList = sensorValueAr;
-
+/*
 	printf("HalInit Sensor1 HAL-ID %d %d %d %d\n",
 			pHalComponent->halId.deviceKindId,
 			pHalComponent->halId.vendorId,
 			pHalComponent->halId.productId,
 			pHalComponent->halId.instanceId );
+*/
 	return HAL_OK;
 }
 
